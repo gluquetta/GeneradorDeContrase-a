@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Se cambio de light a dark el fondo de la barra de navegación -->
+    
+    <div class="container"> <!-- Se cambia de fluid a container solo para que se vea centrado el texto de la barra -->
+      <a class="navbar-brand" href="{% url 'home' %}">Pandora Password App</a> <!-- el href se cambia a / o "{% url 'home' %}" para que me lleve a la ruta inicial o sea home -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> <!-- Para que la navegación este a la derecha y separado del texto del la barra -->
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home</a> <!-- el href se cambia a / o "{% url 'home' %}" para que me lleve a la ruta inicial - Se cambia el nombre de los botones en la barra de navegación -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a> <!-- quitos los disabled en los botones -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

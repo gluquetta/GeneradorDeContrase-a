@@ -1,0 +1,22 @@
+{% extends 'generador/layout.html'%} <!-- extendemos el block y endblock con la url de carpetas -->
+
+{% block conten %} <!-- Abrimos el block que se insertará y cerramos al fina del formulario en este caso -->
+
+<h1>about</h1>
+
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum itaque ipsa, autem sint maiores provident beatae recusandae veritatis hic molestias ipsum distinctio quasi consectetur tempora impedit consequatur architecto quidem cupiditate.
+</p>
+
+<p>
+
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet labore, in facere inventore laboriosam vitae libero, incidunt, explicabo a delectus nulla accusantium laborum! Quam aut corrupti ex eveniet, nam assumenda unde dolor ad voluptatem ipsam est quasi! Accusamus deserunt animi aliquam facilis recusandae molestiae nihil incidunt in soluta repellat!
+</p>
+
+<form action="{% url 'home' %}">
+
+    <button class="btn btn-primary">Regresa a Inicio</button>
+
+</form>
+
+{% endblock %} <!-- Cerramos el block insertado -->
